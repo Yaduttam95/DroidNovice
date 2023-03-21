@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fceed1"
+    android:background="#C4C4C4"
     tools:context=".MainActivity">
 
 
-    <Button
+    <TextView
         android:id="@+id/button1"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_button"
         android:text="1"
         android:gravity="center"
-        android:textColor="#605A78"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,14 +24,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.817" />
 
-    <Button
+    <TextView
         android:id="@+id/button2"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_button"
         android:text="2"
         android:gravity="center"
-        android:textColor="#605A78"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,14 +40,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.817" />
 
-    <Button
+    <TextView
         android:id="@+id/button3"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_button"
         android:text="3"
         android:gravity="center"
-        android:textColor="#605A78"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,14 +56,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.817" />
 
-    <Button
+    <TextView
         android:id="@+id/button4"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_button"
         android:text="4"
         android:gravity="center"
-        android:textColor="#605A78"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,15 +72,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677" />
 
-    <Button
+    <TextView
         android:id="@+id/button5"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_button"
         android:text="5"
         android:gravity="center"
-        android:textColor="#605A78"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
+        android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.352"
@@ -88,14 +89,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677" />
 
-    <Button
+    <TextView
         android:id="@+id/button6"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_button"
         android:text="6"
         android:gravity="center"
-        android:textColor="#605A78"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,14 +105,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677" />
 
-    <Button
+    <TextView
         android:id="@+id/button7"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_button"
         android:text="7"
         android:gravity="center"
-        android:textColor="#605A78"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,14 +121,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.541" />
 
-    <Button
+    <TextView
         android:id="@+id/button8"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_button"
         android:text="8"
         android:gravity="center"
-        android:textColor="#605A78"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -136,14 +137,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.541" />
 
-    <Button
+    <TextView
         android:id="@+id/button9"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_button"
         android:text="9"
         android:gravity="center"
-        android:textColor="#605A78"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,31 +153,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.541" />
 
-    <Button
+    <TextView
         android:id="@+id/button0"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_button"
 
-        android:text="0"
         android:gravity="center"
-        android:textColor="#605A78"
+        android:text="0"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+        app:layout_constraintBottom_toBottomOf="@+id/button_dot"
+        app:layout_constraintEnd_toEndOf="@+id/button1"
+        app:layout_constraintStart_toStartOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.96"/>
 
-    <Button
+    <TextView
         android:id="@+id/button_equal"
         android:layout_width="185dp"
         android:layout_height="80dp"
         android:background="@drawable/equal_button"
         android:text="="
         android:gravity="center"
-        android:textColor="#3D2C2C"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -185,7 +185,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.958" />
 
-    <Button
+    <TextView
         android:id="@+id/button_multi"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -201,7 +201,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.541" />
 
-    <Button
+    <TextView
         android:id="@+id/button_divide"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -217,11 +217,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.406" />
 
-    <Button
+    <TextView
         android:id="@+id/button_add"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:background="@drawable/arithmetic"
+        android:background="@drawable/circle_button"
+        android:backgroundTint="#fe9500"
         android:text="+"
         android:gravity="center"
         android:textColor="#060606"
@@ -233,7 +234,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.817" />
 
-    <Button
+    <TextView
         android:id="@+id/button_sub"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -249,7 +250,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677" />
 
-    <Button
+    <TextView
         android:id="@+id/button_clear"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -266,11 +267,11 @@
         app:layout_constraintVertical_bias="0.406"
         tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/button_para1"
+    <TextView
+        android:id="@+id/button_modu"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:background="@drawable/button"
+        android:background="@drawable/arithmetic"
         android:text="%"
         android:gravity="center"
         android:textColor="#060606"
@@ -282,30 +283,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.406" />
 
-    <Button
-        android:id="@+id/button_para2"
+    <TextView
+        android:id="@+id/button_bksp"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/button"
-        android:text="+/-"
         android:gravity="center"
         android:textColor="#060606"
+        android:text="⌫"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.349"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.406" />
+        app:layout_constraintVertical_bias="0.406"
+        android:drawablePadding="10dp"/>
 
-    <Button
+
+    <TextView
         android:id="@+id/button_dot"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_button"
         android:gravity="center"
         android:text="."
-        android:textColor="#605A78"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -320,6 +323,10 @@
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:textSize="68sp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLength="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.909"

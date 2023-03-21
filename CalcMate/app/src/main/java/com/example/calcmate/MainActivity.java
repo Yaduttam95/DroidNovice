@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView button0, button1, button2, button3, button4, button5, button6, button7, button8, button9, b_equal, b_multi, b_add, b_sub, b_clear, b_dot, b_bksp, b_modu;
+    private TextView button0, button1, button2, button3, button4, button5, button6, button7, button8, button9, b_equal, b_multi, b_add, b_div, b_sub, b_clear, b_dot, b_bksp, b_modu;
     private TextView t1, t2;
 
     private double num1=0, num2=0, result=0;
@@ -32,10 +32,11 @@ public class MainActivity extends AppCompatActivity {
         button9 = (TextView) findViewById(R.id.button9);
         b_equal = (TextView) findViewById(R.id.button_equal);
         b_multi = (TextView) findViewById(R.id.button_multi);
-        b_add =(TextView) findViewById(R.id.button_add);
-        b_sub =(TextView) findViewById(R.id.button_sub);
-        b_clear =(TextView) findViewById(R.id.button_clear);
-        b_dot =(TextView) findViewById(R.id.button_dot);
+        b_add = (TextView) findViewById(R.id.button_add);
+        b_div = (TextView) findViewById(R.id.button_divide);
+        b_sub = (TextView) findViewById(R.id.button_sub);
+        b_clear = (TextView) findViewById(R.id.button_clear);
+        b_dot = (TextView) findViewById(R.id.button_dot);
         b_bksp = (TextView) findViewById(R.id.button_bksp);
         b_modu = (TextView) findViewById(R.id.button_modu);
         t1 = (TextView) findViewById(R.id.input);
@@ -147,6 +148,23 @@ public class MainActivity extends AppCompatActivity {
 
                 t2.setText(Double.toString(result));
                 t1.setText(Double.toString(result));
+            }
+        });
+
+        b_div.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    num1 = Double.parseDouble(t1.getText().toString());
+                } catch (NumberFormatException e) {
+                    // Handle the case where the input is invalid
+                    Toast.makeText(MainActivity.this, "Invalid input", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                operator = "/";
+                t2.setText(Double.toString(num1) + " /");
+                t1.setText("");
             }
         });
 

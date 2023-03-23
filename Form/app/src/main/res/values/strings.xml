@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Form</string>
+
+    <string-array name="city">
+        <item>SELECT</item>
+        <item>Jaipur I</item>
+        <item>Jaipur II</item>
+        <item>Jodhpur</item>
+        <item>Mumbai</item>
+        <item>Delhi</item>
+    </string-array>
+
+</resources>

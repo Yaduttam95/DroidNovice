@@ -1,5 +1,6 @@
 package com.example.form;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button validateButton;
     TextView t1, t2;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -34,38 +36,35 @@ public class MainActivity extends AppCompatActivity {
 
         RadioGroup radioGroup = findViewById(R.id.radio_group);
 
-        validateButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String selectedCity = spinner.getSelectedItem().toString();
-                if (selectedCity.equals("SELECT")) {
-                    Toast.makeText(MainActivity.this, "Please select a city", Toast.LENGTH_SHORT).show();
-                }
-                else if (radioGroup.getCheckedRadioButtonId() == -1) {
-                    Toast.makeText(MainActivity.this, "Please select gender", Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    String finalRadioValue = "";
-                    int radioButtonID = radioGroup.getCheckedRadioButtonId();
-                    View radioButton = radioGroup.findViewById(radioButtonID);
-                    int index = radioGroup.indexOfChild(radioButton);
+        validateButton.setOnClickListener(v -> {
+            String selectedCity = spinner.getSelectedItem().toString();
+            if (selectedCity.equals("SELECT")) {
+                Toast.makeText(MainActivity.this, "Please select a city", Toast.LENGTH_SHORT).show();
+            }
+            else if (radioGroup.getCheckedRadioButtonId() == -1) {
+                Toast.makeText(MainActivity.this, "Please select gender", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                String finalRadioValue = "";
+                int radioButtonID = radioGroup.getCheckedRadioButtonId();
+                View radioButton = radioGroup.findViewById(radioButtonID);
+                int index = radioGroup.indexOfChild(radioButton);
 
-                    switch (index) {
-                        case 0:
-                            finalRadioValue = "Male";
-                            break;
-                        case 1:
-                            finalRadioValue = "Female";
-                            break;
-                        case 2:
-                            finalRadioValue = "Rather Not Say";
-                            break;
-                    }
-                    t1.setText("Selected City = " + selectedCity);
-                    t2.setText("Selected Gender = " + finalRadioValue);
-                    t1.setVisibility(View.VISIBLE);
-                    t2.setVisibility(View.VISIBLE);
+                switch (index) {
+                    case 0:
+                        finalRadioValue = "Male";
+                        break;
+                    case 1:
+                        finalRadioValue = "Female";
+                        break;
+                    case 2:
+                        finalRadioValue = "Rather Not Say";
+                        break;
                 }
+                t1.setText("Selected City = " + selectedCity);
+                t2.setText("Selected Gender = " + finalRadioValue);
+                t1.setVisibility(View.VISIBLE);
+                t2.setVisibility(View.VISIBLE);
             }
         });
 

@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Form</string>
+    <string name="fill_following_details">Fill following details..</string>
+    <string name="select_your_city">Select Your City:</string>
+    <string name="select_gender">Select Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="rather_not_say">Rather Not Say</string>
+    <string name="verify">Verify</string>
 
     <string-array name="city">
         <item>SELECT</item>

@@ -43,26 +43,15 @@ public class MainActivity extends AppCompatActivity {
         t2 = (TextView) findViewById(R.id.output);
 
         button0.setOnClickListener(v -> t1.setText(t1.getText().toString() + "0"));
-
         button1.setOnClickListener(v -> t1.setText(t1.getText().toString() + "1"));
-
         button2.setOnClickListener(v -> t1.setText(t1.getText().toString() + "2"));
-
         button3.setOnClickListener(v -> t1.setText(t1.getText().toString() + "3"));
-
         button4.setOnClickListener(v -> t1.setText(t1.getText().toString() + "4"));
-
         button5.setOnClickListener(v -> t1.setText(t1.getText().toString() + "5"));
-
         button6.setOnClickListener(v -> t1.setText(t1.getText().toString() + "6"));
-
         button7.setOnClickListener(v -> t1.setText(t1.getText().toString() + "7"));
-
         button8.setOnClickListener(v -> t1.setText(t1.getText().toString() + "8"));
-
         button9.setOnClickListener(v -> t1.setText(t1.getText().toString() + "9"));
-
-
         b_equal.setOnClickListener(v -> {
             try {
                 num2 = Double.parseDouble(t1.getText().toString());
@@ -70,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Invalid input", Toast.LENGTH_SHORT).show();
                 return;
             }
-
             switch(operator) {
                 case "+":
                     result = num1 + num2;
@@ -92,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "No operator selected", Toast.LENGTH_SHORT).show();
                     return;
             }
-
             t2.setText(Double.toString(result));
             t1.setText(Double.toString(result));
         });

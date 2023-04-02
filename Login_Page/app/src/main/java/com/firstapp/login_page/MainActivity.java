@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+// Declare
         ed1 = findViewById(R.id.editTextTextPersonName);
         ed2 = findViewById(R.id.editTextTextUserId);
         ed3 = findViewById(R.id.editTextPassword);

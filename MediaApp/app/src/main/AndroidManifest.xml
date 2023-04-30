@@ -12,6 +12,18 @@
         android:theme="@style/Theme.MediaApp"
         tools:targetApi="31">
         <activity
+            android:name=".AudioClicked"
+            android:exported="false" />
+        <activity
+            android:name=".VideoClicked"
+            android:exported="false" />
+        <activity
+            android:name=".ImageAudClicked"
+            android:exported="false" />
+        <activity
+            android:name=".ImageClicked"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
